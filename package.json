@@ -1,0 +1,39 @@
+{
+  "name": "@cowtech/esm-package-utils",
+  "version": "0.1.0",
+  "description": "Small package to help building ESM NPM packages.",
+  "homepage": "https://github.com/cowtech/esm-package-utils/issues",
+  "repository": "github:cowtech/esm-package-utils",
+  "keywords": [
+    "esm",
+    "cowtech"
+  ],
+  "bugs": {
+    "url": "https://github.com/cowtech/esm-package-utils/issues"
+  },
+  "author": "Shogun <shogun@cowtech.it>",
+  "license": "ISC",
+  "private": false,
+  "files": [
+    "index.js",
+    "CHANGELOG.md",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "eslint *.js",
+    "postpublish": "git push origin --tags && git push origin"
+  },
+  "dependencies": {
+    "jscodeshift": "^0.11.0",
+    "renamer": "^2.0.1"
+  },
+  "devDependencies": {
+    "@cowtech/eslint-config": "^7.14.1",
+    "prettier": "^2.2.1"
+  },
+  "engines": {
+    "node": ">=12.15.0"
+  }
+}
