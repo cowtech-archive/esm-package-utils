@@ -12,7 +12,7 @@ https://sw.cowtech.it/esm-package-utils
 After your files have been compiled, let's say in `dist/mjs` folder, you can run the following (or include in `package.json` scripts):
 
 ```sh
-renamer --find js --replace mjs dist/mjs/** && jscodeshift -s --extensions=mjs -t node_modules/@cowtech/esm-package-utils dist/mjs/**
+renamer --find js --replace mjs dist/mjs/* && jscodeshift -s --extensions=mjs -t node_modules/@cowtech/esm-package-utils dist/mjs/**
 ```
 
 This command will rename any file to `.mjs` extension and will make sure that any local `import ... from` or `export ... from` has `.mjs` or `index.mjs` at the end of the path.
