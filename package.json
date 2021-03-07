@@ -23,7 +23,8 @@
   ],
   "main": "index.js",
   "bin": {
-    "esm-pkg-add-imports-extensions": "bin/add-imports-extensions"
+    "esm-pkg-add-imports-extensions": "bin/add-imports-extensions",
+    "esm-ts-node": "bin/ts-node"
   },
   "scripts": {
     "prepublish": "eslint *.js",
