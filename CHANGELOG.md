@@ -1,3 +1,7 @@
+### 2021-03-07 / 0.7.0
+
+- feat: Renamed bin to esm-tap.
+
 ### 2021-03-07 / 0.6.0
 
 - feat: Added esm-ts-tap bin.
