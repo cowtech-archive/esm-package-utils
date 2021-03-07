@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tap --node-arg=--loader=ts-node/esm --node-arg=--experimental-specifier-resolution=node $@
