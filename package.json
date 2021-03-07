@@ -21,6 +21,9 @@
     "README.md"
   ],
   "main": "index.js",
+  "bin": {
+    "esm-pkg-add-imports-extensions": "bin/add-imports-extensions"
+  },
   "scripts": {
     "prepublish": "eslint *.js",
     "postpublish": "git push origin --tags && git push origin"

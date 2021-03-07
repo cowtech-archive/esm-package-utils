@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ESM_PKG_UTILS=mjs
+
+if [ "$1" = "-e" ]; then
+  ESM_PKG_UTILS=$2
+  shift 2
+fi
+
+./node_modules/.bin/jscodeshift -s -t ./node_modules/@cowtech/esm-package-utils $@

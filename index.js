@@ -1,6 +1,8 @@
 const { existsSync, lstatSync } = require('fs')
 const { join, dirname } = require('path')
 
+const extension = `.${process.env.ESM_PKG_UTILS || 'js'}`
+
 module.exports = function transform(file, api) {
   const root = api.jscodeshift(file.source)
   let changed = false
@@ -28,8 +30,8 @@ module.exports = function transform(file, api) {
           path = declaration.value.source.value += '/index'
         }
 
-        if (!declaration.value.source.value.endsWith('.mjs')) {
-          declaration.value.source.value += '.mjs'
+        if (!declaration.value.source.value.endsWith(extension)) {
+          declaration.value.source.value += extension
           changed = true
         }
       })
