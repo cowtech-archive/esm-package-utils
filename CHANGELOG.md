@@ -1,3 +1,7 @@
+### 2021-03-07 / 0.4.0
+
+- feat: Added esm-ts-node bin.
+
 ### 2021-03-07 / 0.3.2
 
 - fix: Fixed bin name.
