@@ -1,3 +1,7 @@
+### 2021-03-07 / 0.3.1
+
+- chore: Export bin folder
+
 ### 2021-03-07 / 0.3.0
 
 - feat: Added bin file for easier extension appending.
