@@ -1,3 +1,7 @@
+### 2021-03-07 / 0.3.2
+
+- fix: Fixed bin name.
+
 ### 2021-03-07 / 0.3.1
 
 - chore: Export bin folder
