@@ -1,3 +1,7 @@
+### 2021-03-07 / 0.8.1
+
+- fix: Naming fix.
+
 ### 2021-03-07 / 0.8.0
 
 - feat: Renamed bin to esm-ts-tap.
