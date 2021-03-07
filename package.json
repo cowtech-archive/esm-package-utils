@@ -25,7 +25,7 @@
   "bin": {
     "esm-pkg-add-imports-extensions": "bin/add-imports-extensions",
     "esm-ts-node": "bin/ts-node",
-    "esm-ts-tap": "bin/ts-tap"
+    "esm-tap": "bin/tap"
   },
   "scripts": {
     "prepublish": "eslint *.js",
