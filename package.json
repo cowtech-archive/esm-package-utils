@@ -15,6 +15,7 @@
   "license": "ISC",
   "private": false,
   "files": [
+    "bin",
     "index.js",
     "CHANGELOG.md",
     "LICENSE.md",
