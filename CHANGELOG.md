@@ -1,3 +1,7 @@
+### 2021-05-20 / 0.8.2
+
+- fix: Fixed extensions detecting.
+
 ### 2021-03-07 / 0.8.1
 
 - fix: Naming fix.
