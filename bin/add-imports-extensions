@@ -1,9 +1,7 @@
-#!/bin/sh
-
-ESM_PKG_UTILS=mjs
+#!/bin/bash
 
 if [ "$1" = "-e" ]; then
-  ESM_PKG_UTILS=$2
+  export ESM_PKG_UTILS=$2
   shift 2
 fi
 
