@@ -1,3 +1,7 @@
+### 2021-06-01 / 0.9.0
+
+- feat: Support JSX.
+
 ### 2021-05-20 / 0.8.2
 
 - fix: Fixed extensions detecting.
