@@ -1,7 +1,9 @@
 const { existsSync, lstatSync } = require('fs')
 const { join, dirname } = require('path')
 
-const extension = `.${process.env.ESM_PKG_UTILS || 'js'}`
+const supportedExtensions = ['.jsx', '.js', '.mjs', '.cjs']
+
+const fixedExtension = process.env.ESM_PKG_UTILS_EXTENSION ? `.${process.env.ESM_PKG_UTILS_EXTENSION}` : undefined
 
 module.exports = function transform(file, api) {
   const root = api.jscodeshift(file.source)
@@ -24,12 +26,31 @@ module.exports = function transform(file, api) {
         }
 
         // If it is a directory import, append index.js
-        const absolutePath = join(dirname(file.path), path)
+        let absolutePath = join(dirname(file.path), path)
 
         if (existsSync(absolutePath) && lstatSync(absolutePath).isDirectory()) {
+          changed = true
           path = declaration.value.source.value += '/index'
+          absolutePath += '/index'
         }
 
+        // If the import path already exists, there's no need to do anything
+        if (existsSync(absolutePath)) {
+          return
+        }
+
+        // Autodetect the extension if needed
+        let extension = fixedExtension
+
+        if (!extension) {
+          for (const ext of supportedExtensions) {
+            if (existsSync(absolutePath + ext)) {
+              extension = ext
+            }
+          }
+        }
+
+        // Perform the replacement
         if (!declaration.value.source.value.endsWith(extension)) {
           declaration.value.source.value += extension
           changed = true
