@@ -1,7 +1,7 @@
 # @cowtech/esm-package-utils
 
-[![Package Version](https://img.shields.io/npm/v/@cowtech/esm-package-utils.svg)](https://npm.im/@cowtech/esm-package-utils)
-[![Dependency Status](https://img.shields.io/david/cowtech/esm-package-utils)](https://david-dm.org/cowtech/esm-package-utils)
+[![Version](https://img.shields.io/npm/v/@cowtech/esm-package-utils.svg)](https://npm.im/@cowtech/esm-package-utils)
+[![Dependencies](https://img.shields.io/librariesio/release/npm/@cowtech/esm-package-utils)](https://libraries.io/npm/@cowtech%2Fesm-package-utils)
 
 Small package to help building ESM NPM packages.
 
