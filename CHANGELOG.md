@@ -1,3 +1,8 @@
+### 2022-01-10 / 0.9.2
+
+- chore: Updated dependencies.
+- chore: Updated dependencies.
+
 ### 2022-01-10 / 0.9.1
 
 - fix: Remove colors.
