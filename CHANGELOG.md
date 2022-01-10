@@ -1,3 +1,10 @@
+### 2022-01-10 / 0.9.1
+
+- fix: Remove colors.
+- chore: Removed useless file.
+- chore: Updated badges.
+- feat: Bump minimum node version.
+
 ### 2021-06-01 / 0.9.0
 
 - feat: Support JSX.
