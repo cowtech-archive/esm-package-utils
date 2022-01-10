@@ -32,12 +32,12 @@
     "postpublish": "git push origin --tags && git push origin"
   },
   "dependencies": {
-    "jscodeshift": "^0.11.0",
+    "jscodeshift": "imnotjames/jscodeshift#fix/drop-colors",
     "renamer": "^2.0.1"
   },
   "devDependencies": {
-    "@cowtech/eslint-config": "^7.14.1",
-    "prettier": "^2.2.1"
+    "@cowtech/eslint-config": "^7.14.5",
+    "prettier": "^2.5.1"
   },
   "engines": {
     "node": ">=14.15.0"

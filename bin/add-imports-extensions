@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./node_modules/.bin/jscodeshift --extensions=js,jsx,mjs -s -t ./node_modules/@cowtech/esm-package-utils $@
+./node_modules/.bin/jscodeshift --fail-on-error --extensions=js,jsx,mjs -s -t ./node_modules/@cowtech/esm-package-utils $@
