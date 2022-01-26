@@ -28,15 +28,19 @@
     "esm-ts-tap": "bin/ts-tap"
   },
   "scripts": {
+    "format": "prettier -w index.js",
+    "lint": "eslint index.js",
     "prepublish": "eslint *.js",
     "postpublish": "git push origin && git push origin --tags"
   },
   "dependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
     "jscodeshift": "^0.13.1",
     "renamer": "^2.0.1"
   },
   "devDependencies": {
-    "@cowtech/eslint-config": "^7.14.5",
+    "@cowtech/eslint-config": "^8.0.1",
     "prettier": "^2.5.1"
   },
   "engines": {
