@@ -1,6 +1,6 @@
 {
   "name": "@cowtech/esm-package-utils",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Small package to help building ESM NPM packages.",
   "homepage": "https://github.com/cowtech/esm-package-utils/issues",
   "repository": "github:cowtech/esm-package-utils",
