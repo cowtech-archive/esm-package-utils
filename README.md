@@ -1,5 +1,7 @@
 # @cowtech/esm-package-utils
 
+## END OF DEVELOPMENT NOTICE - This package has been discontinued
+
 [![Version](https://img.shields.io/npm/v/@cowtech/esm-package-utils.svg)](https://npm.im/@cowtech/esm-package-utils)
 [![Dependencies](https://img.shields.io/librariesio/release/npm/@cowtech/esm-package-utils)](https://libraries.io/npm/@cowtech%2Fesm-package-utils)
 
