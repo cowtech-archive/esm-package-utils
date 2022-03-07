@@ -1,3 +1,7 @@
+### 2022-03-07 / 0.9.4
+
+- chore: Added end of development notice.
+
 ### 2022-01-26 / 0.9.3
 
 - chore: Migrated to ESLint 8.x.x.
